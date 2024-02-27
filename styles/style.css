@@ -218,12 +218,33 @@ header {
 
   .articles-container {
     flex-direction: column;
-    /* border: 1px solid #ccc; */
     gap: 3rem;
   }
 
   .article {
     width: 100%;
     padding: 20px;
+  }
+}
+
+@media (width > 760px) and (width < 1024px) {
+  nav {
+    ul {
+      justify-content: center;
+    }
+
+    .navbar li {
+      width: 100%;
+    }
+  }
+
+  .articles-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+    .article {
+      width: 100%;
+    }
   }
 }
