@@ -112,6 +112,11 @@ header {
   font-weight: bold;
 }
 
+#menu-icon {
+  display: none;
+  height: 30px;
+}
+
 /* Articles */
 .main-article {
   margin: 20px;
@@ -246,5 +251,19 @@ header {
     .article {
       width: 100%;
     }
+  }
+}
+
+@media (width < 480px) {
+  nav {
+    display: none;
+  }
+
+  .newspaper-name {
+    border-bottom: 0px;
+  }
+
+  #menu-icon {
+    display: flex;
   }
 }
